@@ -1,0 +1,11 @@
+<!-- IF S_SHOW_TRANSLATE_POST and S_CURRENT_LANG_NAME != "British English" -->
+    <div id='translate{postrow.POST_ID}'>
+    <!-- IF not  S_IS_BOT  -->
+	    <div id='divtranslatepost{postrow.POST_ID}' style="float: right;">
+            <a href='' class='ql-translatepost myButton' style="height: initial;" numpost='{postrow.POST_ID}'>{L_QUICK_LANG_TRANSLATE_POST} {S_CURRENT_LANG_NAME}</a>
+            <select style="display:none;" id='cboLangYandex{postrow.POST_ID}' class='ql-lstLangYandex selcls'><option value='{S_CURRENT_LANG}'></option></select>
+        </div>
+	    <div id='divoriginalpost{postrow.POST_ID}' class='myButton' style="float: right; display:none; "><a href='' class='ql-originalpost' numpost='{postrow.POST_ID}'>{L_QUICK_LANG_ORIGINAL_POST}</a></div>
+    <!-- ENDIF -->
+    </div>
+<!-- ENDIF -->
